@@ -1,12 +1,14 @@
 import "../hojas-de-estilo/Testimonio.css";
 import PropTypes from "prop-types";
 
+const imagenes = import.meta.glob("../imagenes/*.png", {eager: true});
+
 function Testimonio(props) {
   return (
     <div className="contenedor-tesimonio">
       <img
         className="imagen-testimonio"
-        src={`../imagenes/testimonio-${props.imagen}.png`}
+        src={imagenes[`../imagenes/testimonio-${props.imagen}.png`]?.default}
         alt={`Imagen de ${props.nombre}`}
       />
       <div className="contenedor-texto-testimonio">
