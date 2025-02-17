@@ -6,7 +6,7 @@ function Testimonio(props) {
     <div className="contenedor-tesimonio">
       <img
         className="imagen-testimonio"
-        src={`src/imagenes/testimonio-${props.imagen}.png`}
+        src={`../imagenes/testimonio-${props.imagen}.png`}
         alt={`Imagen de ${props.nombre}`}
       />
       <div className="contenedor-texto-testimonio">
